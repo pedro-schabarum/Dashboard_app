@@ -23,10 +23,14 @@ $(document).ready(() => {
             data: `competencia=${competencia}`,
             dataType: 'json',
             success: dados =>{
-                $('#numeroVendas').html(dados.numeroVendas)
+                $('#despesas').html(dados.numeroVendas)
                 $('#totalVendas').html(dados.totalVendas)
                 $('#clientesAtivos').html(dados.clientesAtivos)
-
+                $('#clientesInativos').html(dados.clientesInativos)
+                $('#reclamacoes').html(dados.reclamacoes)
+                $('#elogios').html(dados.elogios)
+                $('#sugestoes').html(dados.sugestoes)
+                $('#despesas').html(dados.despesas)
             },
             error: erro =>{ console.log(erro)}
         })
